@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Words Wordle</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div class="menu">
+        <h1>Wordle</h1>
+    </div>
+    <div class="game__container">
+        <div class="start__btn">
+            <button class="game__start">GAME START</button>
+        </div>
+        <div class="game__context hidden">
+            <div class="answer__cell" id="ac__1">-</div>
+            <div class="answer__cell" id="ac__1">-</div>
+            <div class="answer__cell" id="ac__1">T</div>
+            <div class="answer__cell" id="ac__1">-</div>
+            <div class="answer__cell" id="ac__1">-</div>
+        </div>
+        <div class="game__input hidden">
+            <input class="cell" id="cell__1" type="text" maxlength="1" onkeydown="return /[a-z]/i.test(event.key)">
+            <input class="cell" id="cell__2" type="text" maxlength="1" onkeydown="return /[a-z]/i.test(event.key)">
+            <input class="cell" id="cell__3" type="text" maxlength="1" onkeydown="return /[a-z]/i.test(event.key)">
+            <input class="cell" id="cell__4" type="text" maxlength="1" onkeydown="return /[a-z]/i.test(event.key)">
+            <input class="cell" id="cell__5" type="text" maxlength="1" onkeydown="return /[a-z]/i.test(event.key)">
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>

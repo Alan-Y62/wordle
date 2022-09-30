@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+body {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-size: 2rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu h1 {
+    font-size: 3rem;
+    font-family: 'Nabla', cursive;
+}
+
+.game__context {
+    display: flex;
+    column-gap: 3rem;
+    font-size: 3rem;
+    justify-content: center;
+}
+
+.start__btn {
+    display: flex;
+    justify-content: center;
+    margin: 5rem auto;
+}
+
+.game__start {
+    width: 15vw;
+    max-width: 250px;
+    aspect-ratio: 4 / 1;
+}
+
+.answer__cell {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+}
+
+.game__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cell {
+    color: rgb(116, 114, 114);
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    height: 40px;
+    width: 40px;
+}
+
+.game__input {
+    display: grid;
+    grid-template-columns: repeat(5, 80px);
+    justify-content: center;
+}
+
+.game__input .cell {
+    margin: 1rem auto 0 auto;
+}
+
+.cell {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 2rem;
+    border: none;
+    color: black;
+    outline: none;
+}
+
+.hidden {
+    display: none !important;
+}
